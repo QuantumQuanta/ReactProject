@@ -305,7 +305,17 @@
   -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
 }
 
-/*Carousel CSS*/
+/* Framer scrolling text css*/
+/* .progress {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: var(--accent);
+  bottom: 100px;
+} */
+
+
 
 
 

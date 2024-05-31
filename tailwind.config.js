@@ -67,10 +67,15 @@ module.exports = {
           '50%': { transform: 'rotateX(45deg) rotateY(45deg)'},
           '75%': { transform: 'rotateX(-45deg) rotateY(45deg)'},
           '100%': { transform: 'rotateX(45deg) rotateY(-45deg)'}
+        },
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-6deg)' },
+          '50%': { transform: 'rotate(6deg)' },
         }
       },
       animation: {
         roll: 'roll 5s infinite',
+        wiggle: 'wiggle 0.6s ease-in-out infinite',
       }
     },
   },

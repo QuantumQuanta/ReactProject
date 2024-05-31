@@ -11,8 +11,8 @@ function About() {
         /*Mobile content */
       }
       return (
-        <div className="flex flex-col h-screen">
-          <div className="flex h-1/3 justify-center items-center pr-36">
+        <div className="flex-1 flex-col h-screen">
+          <div className="flex h-1/3 justify-center items-center pr-36 pt-14">
             <div className="relative w-full h-screen [perspective:1000px]">
               <div className="font-sans h-[150px] w-[150px] sm:h-[250px] sm:w-[250px] absolute top-[40%] left-[50%] sm:top-[30%] sm:left-[30%] transform -translate-x-1/2 -translate-y-1/2 [transform-style:preserve-3d] animate-[roll_5s_infinite]">
                 <div className="h-[150px] w-[150px] sm:h-[250px] sm:w-[250px] text-center text-white bg-transparent text-3xl box-border absolute [transition:all_1s] [transform:translateZ(75px)] sm:[transform:translateZ(125px)]">
@@ -61,11 +61,11 @@ function About() {
             </div>
           </div>
           <div
-            className="flex flex-col h-2/3 overflow-y-scroll invisible-scrollbar justify-center items-center p-5"
+            className="flex-1 flex-col h-2/3 overflow-y-scroll invisible-scrollbar justify-center items-center p-5"
             style={{ gap: isTap ? "0.25rem" : "0 rem" }}
           >
             <motion.div
-              className="w-11/12 h-fit text-justify border-0 rounded-lg bg-slate-200 dark:bg-slate-800 bg-opacity-40 dark:bg-opacity-40 shadow hover:shadow-2xl pt-3"
+              className="w-full max-w-lg h-fit text-justify border-0 rounded-lg bg-slate-200 dark:bg-slate-800 bg-opacity-40 dark:bg-opacity-40 shadow hover:shadow-2xl pt-3"
               whileHover={{ scale: 0.8 }}
               whileTap={{ scale: 0.8 }}
               onTapStart={() => setIsTap(true)}
@@ -89,7 +89,7 @@ function About() {
               </div>
             </motion.div>
             <motion.div
-              className="w-11/12 h-fit text-justify border-0 rounded-lg bg-slate-200 dark:bg-slate-800 bg-opacity-40 dark:bg-opacity-40 shadow hover:shadow-2xl pt-3"
+              className="w-full max-w-lg h-fit text-justify border-0 rounded-lg bg-slate-200 dark:bg-slate-800 bg-opacity-40 dark:bg-opacity-40 shadow hover:shadow-2xl pt-3"
               whileHover={{ scale: 0.8 }}
               whileTap={{ scale: 0.8 }}
               onTapStart={() => setIsTap(true)}
@@ -116,7 +116,7 @@ function About() {
               </div>
             </motion.div>
             <motion.div
-              className="w-11/12 h-fit text-justify border-0 rounded-lg bg-slate-200 dark:bg-slate-800 bg-opacity-40 dark:bg-opacity-40 shadow hover:shadow-2xl pt-3"
+              className="w-full max-w-lg h-fit text-justify border-0 rounded-lg bg-slate-200 dark:bg-slate-800 bg-opacity-40 dark:bg-opacity-40 shadow hover:shadow-2xl pt-3"
               whileHover={{ scale: 0.8 }}
               whileTap={{ scale: 0.8 }}
               onTapStart={() => setIsTap(true)}
@@ -145,7 +145,7 @@ function About() {
               </div>
             </motion.div>
             <motion.div
-              className="w-11/12 h-fit text-justify border-0 rounded-lg bg-slate-200 dark:bg-slate-800 bg-opacity-40 dark:bg-opacity-40 shadow hover:shadow-2xl pt-3"
+              className="w-full max-w-lg h-fit text-justify border-0 rounded-lg bg-slate-200 dark:bg-slate-800 bg-opacity-40 dark:bg-opacity-40 shadow hover:shadow-2xl pt-3"
               whileHover={{ scale: 0.8 }}
               whileTap={{ scale: 0.8 }}
               onTapStart={() => setIsTap(true)}
@@ -159,14 +159,14 @@ function About() {
                 <div className="pl-3 pb-3 pr-6">
                   <p>
                     HTML5, CSS3, Tailwindcss, PHP, JavaScript, Typescript,
-                    JQuery, AJAX, ReactJS, Bootstrap 5, Shadcn UI, Framer-motion, Zod, MySql,
-                    PHPMyAdmin, ExpressJS
+                    JQuery, AJAX, ReactJS, Bootstrap 5, Shadcn UI,
+                    Framer-motion, Zod, MySql, PHPMyAdmin, ExpressJS
                   </p>
                 </div>
               </div>
             </motion.div>
             <motion.div
-              className="w-11/12 h-fit text-justify border-0 rounded-lg bg-slate-200 dark:bg-slate-800 bg-opacity-40 dark:bg-opacity-40 shadow hover:shadow-2xl pt-3"
+              className="w-full max-w-lg h-fit text-justify border-0 rounded-lg bg-slate-200 dark:bg-slate-800 bg-opacity-40 dark:bg-opacity-40 shadow hover:shadow-2xl pt-3"
               whileHover={{ scale: 0.8 }}
               whileTap={{ scale: 0.8 }}
               onTapStart={() => setIsTap(true)}
@@ -180,6 +180,13 @@ function About() {
                 <div className="pl-3 pb-3 pr-6">
                   <div>
                     <h2>
+                      University of Engineering and Management Kolkata, Bachelor
+                      of Technology(B.Tech) in Computer Science & Engineering
+                    </h2>
+                    <p>2015 – 2019 | Kolkata</p>
+                  </div>
+                  <div>
+                    <h2>
                       Kalna Ambika Mahismardini High School, Higher Secondary
                     </h2>
                     <p>2014 – 2015 | Kalna</p>
@@ -188,18 +195,11 @@ function About() {
                     <h2>Kalna Ambika Mahismardini High School, Secondary</h2>
                     <p>2012 – 2013 | Kalna</p>
                   </div>
-                  <div>
-                    <h2>
-                      University of Engineering and Management Kolkata, Bachelor
-                      of Technology(B.Tech) in Computer Science & Engineering
-                    </h2>
-                    <p>2015 – 2019 | Kolkata</p>
-                  </div>
                 </div>
               </div>
             </motion.div>
             <motion.div
-              className="w-11/12 h-fit text-justify border-0 rounded-lg bg-slate-200 dark:bg-slate-800 bg-opacity-40 dark:bg-opacity-40 shadow hover:shadow-2xl pt-3"
+              className="w-full max-w-lg h-fit text-justify border-0 rounded-lg bg-slate-200 dark:bg-slate-800 bg-opacity-40 dark:bg-opacity-40 shadow hover:shadow-2xl pt-3"
               whileHover={{ scale: 0.8 }}
               whileTap={{ scale: 0.8 }}
               onTapStart={() => setIsTap(true)}
@@ -216,7 +216,7 @@ function About() {
               </div>
             </motion.div>
             <motion.div
-              className="w-11/12 h-fit text-justify border-0 rounded-lg bg-slate-200 dark:bg-slate-800 bg-opacity-40 dark:bg-opacity-40 shadow hover:shadow-2xl pt-3"
+              className="w-full max-w-lg h-fit text-justify border-0 rounded-lg bg-slate-200 dark:bg-slate-800 bg-opacity-40 dark:bg-opacity-40 shadow hover:shadow-2xl pt-3"
               whileHover={{ scale: 0.8 }}
               whileTap={{ scale: 0.8 }}
               onTapStart={() => setIsTap(true)}
@@ -354,19 +354,19 @@ function About() {
                 EDUCATION
               </h1>
               <div>
+                <h2>
+                  University of Engineering and Management Kolkata, Bachelor of
+                  Technology(B.Tech) in Computer Science & Engineering
+                </h2>
+                <p>2015 – 2019 | Kolkata</p>
+              </div>
+              <div>
                 <h2>Kalna Ambika Mahismardini High School, Higher Secondary</h2>
                 <p>2014 – 2015 | Kalna</p>
               </div>
               <div>
                 <h2>Kalna Ambika Mahismardini High School, Secondary</h2>
                 <p>2012 – 2013 | Kalna</p>
-              </div>
-              <div>
-                <h2>
-                  University of Engineering and Management Kolkata, Bachelor of
-                  Technology(B.Tech) in Computer Science & Engineering
-                </h2>
-                <p>2015 – 2019 | Kolkata</p>
               </div>
             </div>
           </motion.div>
